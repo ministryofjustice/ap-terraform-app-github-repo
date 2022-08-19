@@ -5,6 +5,9 @@
 *.tfstate
 *.tfstate.*
 
+# Lock file
+.terraform.lock.hcl
+
 # Test lock file
 test/.terraform.lock.hcl
 
