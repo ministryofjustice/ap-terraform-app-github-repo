@@ -1,3 +1,7 @@
+# Ap-Terraform-App-GitHub-Repo
+
+Creates GitHub repository for application source code
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
