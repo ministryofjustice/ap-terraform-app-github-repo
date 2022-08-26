@@ -17,7 +17,9 @@ Creates GitHub repository for application source code
 
 ## Modules
 
-No modules.
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_repo"></a> [repo](#module\_repo) | ./modules/repo | n/a |
 
 ## Resources
 
