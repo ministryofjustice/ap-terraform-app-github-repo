@@ -14,8 +14,3 @@ resource "github_repository" "this" {
   }
 
 }
-
-module "repo" {
-  source = "./modules/repo"
-
-}
