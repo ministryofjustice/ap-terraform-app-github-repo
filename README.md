@@ -7,6 +7,7 @@ Creates GitHub repository for application source code
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.14 |
 | <a name="requirement_github"></a> [github](#requirement\_github) | >= 4.0 |
 
 ## Providers

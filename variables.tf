@@ -11,6 +11,7 @@ variable "description" {
 variable "template_owner" {
   description = "Name of the organisation owning the template repository"
   type        = string
+
 }
 
 variable "template_repository" {
