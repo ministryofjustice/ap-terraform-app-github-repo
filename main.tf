@@ -14,3 +14,15 @@ resource "github_repository" "this" {
   }
 
 }
+
+#Import existing cluster-admins team
+data "github_team" "cluster-admins" {
+  slug = "cluster-admins"
+}
+
+# Add a team to a repo and grant permissions
+resource "github_team_repository" "this" {
+  team_id    = data.github_team.cluster-admins.id
+  repository = github_repository.this.name
+  permission = "admin"
+}
