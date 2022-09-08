@@ -19,7 +19,7 @@ variable "template_repository" {
   type        = string
 }
 
-variable "cluster-admins" {
+variable "admin_team" {
   description = "Name of the admin team"
   type        = string
 }

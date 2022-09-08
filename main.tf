@@ -16,8 +16,8 @@ resource "github_repository" "this" {
 }
 
 #Import existing admin and maintainer teams
-data "github_team" "cluster-admins" {
-  slug = var.cluster-admins
+data "github_team" "admin_team" {
+  slug = var.admin_team
 }
 
 data "github_team" "maintainer_team" {
@@ -31,7 +31,7 @@ resource "github_team_repository" "this" {
   repository = github_repository.this.name
 
   for_each = {
-    "cluster-admins"  = "admin"
+    "admin_team"      = "admin"
     "maintainer_team" = "maintain"
   }
   team_id    = each.key
