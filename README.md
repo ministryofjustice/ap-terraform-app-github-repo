@@ -27,12 +27,15 @@ No modules.
 | [github_repository.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
 | [github_team_repository.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/team_repository) | resource |
 | [github_team.cluster-admins](https://registry.terraform.io/providers/integrations/github/latest/docs/data-sources/team) | data source |
+| [github_team.maintainer_team](https://registry.terraform.io/providers/integrations/github/latest/docs/data-sources/team) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_cluster-admins"></a> [cluster-admins](#input\_cluster-admins) | Name of the admin team | `string` | n/a | yes |
 | <a name="input_description"></a> [description](#input\_description) | Description for the repository | `string` | n/a | yes |
+| <a name="input_maintainer_team"></a> [maintainer\_team](#input\_maintainer\_team) | Name of the maintainer team | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Name of the repository | `string` | n/a | yes |
 | <a name="input_template_owner"></a> [template\_owner](#input\_template\_owner) | Name of the organisation owning the template repository | `string` | n/a | yes |
 | <a name="input_template_repository"></a> [template\_repository](#input\_template\_repository) | Name of the template repository to use | `string` | n/a | yes |

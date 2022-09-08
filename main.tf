@@ -15,14 +15,25 @@ resource "github_repository" "this" {
 
 }
 
-#Import existing cluster-admins team
+#Import existing admin and maintainer teams
 data "github_team" "cluster-admins" {
-  slug = "cluster-admins"
+  slug = var.cluster-admins
 }
 
-# Add a team to a repo and grant permissions
+data "github_team" "maintainer_team" {
+  slug = var.maintainer_team
+}
+
+# Add teams to the repo and grant permissions
+
+
 resource "github_team_repository" "this" {
-  team_id    = data.github_team.cluster-admins.id
   repository = github_repository.this.name
-  permission = "admin"
+
+  for_each = {
+    "cluster-admins"  = "admin"
+    "maintainer_team" = "maintain"
+  }
+  team_id    = each.key
+  permission = each.value
 }
