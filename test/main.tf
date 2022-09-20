@@ -5,6 +5,6 @@ module "example" {
   description         = "githubrepotest"
   template_owner      = "gitrepo"
   template_repository = "templaterepo"
-  admin_team          = "admin_team"
-  maintainer_team     = "maintainer_team"
+  admin_team          = "analytical-platform"
+  maintainer_team     = "analytical-platform"
 }
