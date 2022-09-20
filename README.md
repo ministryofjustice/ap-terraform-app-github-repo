@@ -25,7 +25,8 @@ No modules.
 | Name | Type |
 |------|------|
 | [github_repository.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
-| [github_team_repository.this](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/team_repository) | resource |
+| [github_team_repository.admin](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/team_repository) | resource |
+| [github_team_repository.maintainer](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/team_repository) | resource |
 | [github_team.admin_team](https://registry.terraform.io/providers/integrations/github/latest/docs/data-sources/team) | data source |
 | [github_team.maintainer_team](https://registry.terraform.io/providers/integrations/github/latest/docs/data-sources/team) | data source |
 
