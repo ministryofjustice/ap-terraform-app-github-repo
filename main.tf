@@ -27,13 +27,14 @@ data "github_team" "maintainer_team" {
 # Add teams to the repo and grant permissions
 
 
-resource "github_team_repository" "this" {
+resource "github_team_repository" "admin" {
   repository = github_repository.this.name
+  team_id    = data.github_team.admin_team.id
+  permission = "admin"
+}
 
-  for_each = {
-    "admin_team"      = "admin"
-    "maintainer_team" = "maintain"
-  }
-  team_id    = each.key
-  permission = each.value
+resource "github_team_repository" "maintainer" {
+  repository = github_repository.this.name
+  team_id    = data.github_team.maintainer_team.id
+  permission = "maintainer"
 }
