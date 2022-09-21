@@ -1,6 +1,6 @@
 resource "github_repository" "this" {
 
-  name                 = var.name
+  name                 = var.application_name
   description          = var.description
   has_projects         = true
   vulnerability_alerts = true
