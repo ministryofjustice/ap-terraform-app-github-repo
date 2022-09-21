@@ -1,8 +1,8 @@
-variable "name" {
-  description = "Name of the repository"
-  type        = string
-}
 
+variable "application_name" {
+  type        = string
+  description = "Name of the ECR and git repository."
+}
 variable "description" {
   description = "Description for the repository"
   type        = string
