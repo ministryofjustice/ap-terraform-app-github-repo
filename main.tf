@@ -36,5 +36,5 @@ resource "github_team_repository" "admin" {
 resource "github_team_repository" "maintainer" {
   repository = github_repository.this.name
   team_id    = data.github_team.maintainer_team.id
-  permission = "maintainer"
+  permission = "maintain"
 }
